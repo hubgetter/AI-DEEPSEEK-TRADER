@@ -13,7 +13,9 @@
       "Bash(pkill:*)",
       "Bash(if exist dist rmdir /s /q dist)",
       "Bash(if exist node_modules.cache rmdir /s /q node_modules.cache)",
-      "Bash(if exist .ts-node rmdir /s /q .ts-node)"
+      "Bash(if exist .ts-node rmdir /s /q .ts-node)",
+      "Bash(timeout 30 npm run backtest:dashboard:*)",
+      "Bash(npx tsc --noEmit)"
     ],
     "deny": [],
     "ask": []
