@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install)",
+      "Bash(npm run build:*)",
+      "Bash(find:*)",
+      "Bash(npm run backtest:*)",
+      "Bash(cat:*)",
+      "Bash(node:*)",
+      "Bash(timeout 30 npm run backtest:*)",
+      "Bash(python3:*)",
+      "Bash(npm install:*)",
+      "Bash(pkill:*)",
+      "Bash(if exist dist rmdir /s /q dist)",
+      "Bash(if exist node_modules.cache rmdir /s /q node_modules.cache)",
+      "Bash(if exist .ts-node rmdir /s /q .ts-node)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
